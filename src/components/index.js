@@ -1,3 +1,5 @@
-import Button from './Button';
+import Button from './Button'
+import Layout from './Layout'
+import Section from './Section'
 
-export { Button }
+export { Button, Layout, Section }
