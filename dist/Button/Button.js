@@ -16,6 +16,7 @@ function Button(_ref) {
       backgroundColor = _ref.backgroundColor,
       onClick = _ref.onClick;
   return /*#__PURE__*/_react.default.createElement("button", {
+    className: "btn btn-primary",
     onClick: onClick,
     style: backgroundColor && {
       backgroundColor: backgroundColor
