@@ -1,5 +1,6 @@
 import '!style-loader!css-loader!sass-loader!../src/scss/base.scss';
 export const parameters = {
+  layout: 'fullscreen',
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
     matchers: {

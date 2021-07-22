@@ -4,7 +4,7 @@ const Seo = () => {
 
     return (
         <div className="seo">
-            <h1>SEO</h1>
+            {/* <h1>SEO</h1> */}
         </div>
     )
 }

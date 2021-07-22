@@ -1,13 +1,16 @@
 import React from 'react'
 import { Navbar, Nav, Container } from 'react-bootstrap'
 import image from './nav-bottom.svg'
+import logo from './logo.svg'
 
 const NavBar = ({ title, navBg }) => {
     return (
         <>
-            <Navbar bg={navBg ? navBg : 'primary'} variant='dark' expand='lg' style={{ marginBottom: '-1px' }}>
+            <Navbar bg={navBg ? navBg : 'dark'} variant='dark' expand='lg' style={{ marginBottom: '-1px' }}>
                 <Container>
-                    {showTitle && <Navbar.Brand href='/'>{title}</Navbar.Brand>}
+                    {title && (
+                    <Navbar.Brand href='/'><img src={logo} style={{ width: '50px', marginRight: '1rem' }} />{title}</Navbar.Brand>
+                    )}
                     {/* <Navbar.Toggle aria-controls='basic-navbar-nav' /> */}
                     {/* <Navbar.Collapse id='basic-navbar-nav'> */}
                     <Nav className='ml-auto'>{/* <NavDropdown title="Discover" id="basic-nav-dropdown">
@@ -22,7 +25,7 @@ const NavBar = ({ title, navBg }) => {
                     {/* </Navbar.Collapse> */}
                 </Container>
             </Navbar>
-            <img src={image} className='mb-5' alt='' />
+            {/* <img src={image} className='mb-5' alt='' /> */}
         </>
     )
 }

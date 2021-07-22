@@ -1,26 +1,34 @@
 import React from 'react'
-
+import { Col, Row } from 'react-bootstrap'
 import Layout from './Layout'
 
 export default {
     title: 'Layout',
     component: Layout,
     // argTypes: {
-    //     children: 'node',
-    //     className: 'string',
+    //     fluid: {control: 'bool'}
     // },
 }
 
-const Template = () => {
+const Template = (args) => {
     return (
-        <Layout>
-            <p>This is a layout</p>
+        <Layout {...args}>
+            <Row className="mt-5">
+                <Col>
+                    <p>This is a layout</p>
+                </Col>
+            </Row>
         </Layout>
     )
 }
 
 export const Default = Template.bind({})
-// Default.args = {
-//     children: '<h1>Default</h1>',
-//     className: '',
-// }
+
+Default.args = {
+    fluid: false,
+    footer: true,
+    title: 'Default',
+    pageTitle: 'Page Title',
+    jumbotronBg: '',
+    
+}

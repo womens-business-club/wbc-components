@@ -65,6 +65,11 @@ p.para, ul.para {
     line-height: 1.5;
 }
 
+.navbar {
+    border-bottom: 2px solid $primary;
+    height: 6rem;
+}
+
 .btn-primary {
     color: white !important;
 }
