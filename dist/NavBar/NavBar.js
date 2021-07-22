@@ -7,6 +7,8 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _propTypes = _interopRequireDefault(require("prop-types"));
+
 var _reactBootstrap = require("react-bootstrap");
 
 var _navBottom = _interopRequireDefault(require("./nav-bottom.svg"));

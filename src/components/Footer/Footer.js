@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Section } from '../Section'
 import img from './footer-top.svg'
 import { Container, Row, Col, Nav } from 'react-bootstrap'

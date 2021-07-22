@@ -7,6 +7,8 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _propTypes = _interopRequireDefault(require("prop-types"));
+
 var _Section = require("../Section");
 
 var _footerTop = _interopRequireDefault(require("./footer-top.svg"));
