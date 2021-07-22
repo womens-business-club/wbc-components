@@ -30,6 +30,5 @@ Button.propTypes = {
   onClick: _propTypes.default.func
 };
 Button.defaultProps = {
-  backgroundColor: null,
-  onClick: undefined
+  backgroundColor: 'primary'
 };

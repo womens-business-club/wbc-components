@@ -16,6 +16,5 @@ Button.propTypes = {
 }
 
 Button.defaultProps = {
-    backgroundColor: null,
-    onClick: undefined,
+    backgroundColor: 'primary',
 }
