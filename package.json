@@ -1,6 +1,6 @@
 {
     "name": "@womens-business-club/wbc-components",
-    "version": "0.2.8",
+    "version": "0.2.9",
     "main": "dist/index.js",
     "private": false,
     "files": [
@@ -38,7 +38,7 @@
         "storybook": "start-storybook -p 6006 -s public",
         "build-storybook": "build-storybook -s public",
         "clean": "rimraf dist",
-        "compile": "npm run clean && cross-env NODE_ENV=production babel src/components --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,stories.js,__snapshots__",
+        "compile": "npm run clean && cross-env NODE_ENV=production babel src/components src/scss --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,stories.js,__snapshots__",
         "deploy": "npm run compile && git add . && git commit -am 'release' && git push"
     },
     "eslintConfig": {

@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader&family=Poppins:wght@300;600;700&display=swap');
+
+// $grid-gutter-width: 0;
+
+$pink: #f8408c;
+$dark-pink: #dc007c;
+$orange: #fba02f;
+$dark-orange: #f76408;
+$teal: #2addc6;
+$dark-teal: #06bf99;
+$purple: #af32dd;
+$dark-purple: #7809bf;
+$dark-blue: #2c1b73;
+
+$green: #18ce7b;
+$red: #ff3261;
+$yellow: #e2c231;
+$blue: #5493ff;
+
+$primary: $pink;
+$secondary: $teal;
+$info: $purple;
+$warning: $orange;
+$success: $dark-teal;
+
+$dark: $dark-blue;
+
+$body-bg: white;
+$body-color: $dark-blue;
+
+$border-radius: 0.5rem;
+
+$font-family-sans-serif: 'Poppins', sans-serif;
+
+$headings-font-weight: 700;
+$headings-line-height: 1.15;
+
+$display1-weight: 600;
+$display2-weight: 600;
+$display3-weight: 600;
+$display4-weight: 600;
+$display-line-height: 1.5;
+
+.mt {
+    &-6 {
+        margin-top: 6rem;
+    }
+
+    &-7 {
+        margin-top: 10rem;
+    }
+}
+
+.p {
+    &t {
+        &-6 {
+            padding-top: 6rem;
+        }
+        &-7 {
+            padding-top: 10rem;
+        }
+    }
+}
+
+p.para,
+ul.para {
+    font-family: 'Newsreader', serif;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.btn-primary {
+    color: white !important;
+}
+
+.card {
+    color: $dark-blue;
+}
+
+.remove-x-margins {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.navbar {
+    border-bottom: 2px solid $primary;
+    height: 6rem;
+}
+
+hr {
+    border-top: 2px solid $primary !important;
+}
+
+// Coloured Squares
+.colour-col {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .colour-square {
+        width: 100px;
+        height: 100px;
+        border-radius: $border-radius;
+        margin-bottom: 1rem;
+    }
+
+    h4 {
+        font-weight: lighter !important;
+    }
+}
+
+.bg-orange {
+    background-color: $orange;
+}
+.bg-pink {
+    background-color: $pink;
+}
+.bg-teal {
+    background-color: $teal;
+}
+.bg-purple {
+    background-color: $purple;
+}
+.bg-blue {
+    background-color: $blue;
+}
+.bg-green {
+    background-color: $green;
+}
+.bg-red {
+    background-color: $red;
+}
+.bg-yellow {
+    background-color: $yellow;
+}
+.bg-dark-pink {
+    background-color: $dark-pink;
+}
+.bg-dark-orange {
+    background-color: $dark-orange;
+}
+.bg-dark-teal {
+    background-color: $dark-teal;
+}
+.bg-dark-purple {
+    background-color: $dark-purple;
+}
+.bg-dark-blue {
+    background-color: $dark-blue;
+}
+
+// Layout of landing page
+.womens-business-title {
+    font-size: 1.5rem;
+
+    @media (min-width: 768px) {
+        font-size: 2rem;
+    }
+}
+.conference-title {
+    font-size: 2rem !important;
+
+    @media (min-width: 768px) {
+        font-size: 6rem !important;
+    }
+}
+.landing-title-container {
+    @media (min-width: 1200px) {
+        margin-bottom: -350px;
+    }
+}
+.landing-cards-section {
+    @media (min-width: 1200px) {
+        margin-top: -270px;
+    }
+}
+.location-card-col .card {
+    @media (min-width: 768px) {
+        height: 300px;
+    }
+}
+
+.landing-logo {
+    display: flex;
+    align-items: flex-end;
+
+    @media (min-width: 992px) {
+        align-items: center;
+    }
+
+    img {
+        width: 100px;
+
+        @media (min-width: 768px) {
+            width: 200px;
+        }
+
+        @media (min-width: 992px) {
+            width: 100%;
+        }
+    }
+}
+
+@import '~bootstrap/scss/bootstrap';
+
+// // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) { ... }
+
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) { ... }
+
+// // Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }
