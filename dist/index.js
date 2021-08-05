@@ -3,12 +3,6 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "Button", {
-  enumerable: true,
-  get: function get() {
-    return _Button.default;
-  }
-});
 Object.defineProperty(exports, "Layout", {
   enumerable: true,
   get: function get() {
@@ -27,8 +21,6 @@ Object.defineProperty(exports, "HeaderRow", {
     return _HeaderRow.default;
   }
 });
-
-var _Button = _interopRequireDefault(require("./Button"));
 
 var _Layout = _interopRequireDefault(require("./Layout"));
 
