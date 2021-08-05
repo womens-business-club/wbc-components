@@ -1,5 +1,4 @@
 import * as React from 'react'
-import PropTypes from 'prop-types'
 import Container from 'react-bootstrap/Container'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import { NavBar } from '../NavBar'
@@ -27,27 +26,6 @@ const Layout = ({ fluid, footer, children, title, pageTitle, jumbotronBg, style,
             {footer && <Footer>{footerChildren}</Footer>}
         </>
     )
-}
-
-Layout.propTypes = {
-    /** If true, the main container will be fluid. */
-    fluid: PropTypes.bool,
-    footer: PropTypes.bool,
-    children: PropTypes.node.isRequired,
-    title: PropTypes.string,
-    pageTitle: PropTypes.string,
-    /** Background color for the jumbotron. Use boostrap theme colours (primary, danger, etc) */
-    jumbotronBg: PropTypes.string,
-    style: PropTypes.object,
-    navBg: PropTypes.string,
-    footerChildren: PropTypes.node
-}
-
-Layout.defaultProps = {
-    fluid: false,
-    footer: true,
-    showTitle: true,
-    pageTitle: 'PAGE TITLE',
 }
 
 export default Layout

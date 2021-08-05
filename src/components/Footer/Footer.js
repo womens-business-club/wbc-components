@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { Section } from '../Section'
 import img from './footer-top.svg'
 import { Container, Row, Col, Nav } from 'react-bootstrap'
@@ -43,18 +42,6 @@ const Footer = ({email, phone, children}) => {
             </Container>
         </Section>
     )
-}
-
-Footer.propTypes = {
-    email: React.PropTypes.string,
-    phone: React.PropTypes.string,
-    /** Typically used to add site specific links. */
-    children: React.PropTypes.node
-}
-
-Footer.defaultProps = {
-    email: 'hello@womensbusiness.club',
-    phone: '020 3960 0271',
 }
 
 // Make sure the icon filename is the same as the service here.

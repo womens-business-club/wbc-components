@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { Navbar, Nav, Container } from 'react-bootstrap'
 import image from './nav-bottom.svg'
 import logo from './logo.svg'

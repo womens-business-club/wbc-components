@@ -9,8 +9,6 @@ exports.default = void 0;
 
 var React = _interopRequireWildcard(require("react"));
 
-var _propTypes = _interopRequireDefault(require("prop-types"));
-
 var _Container = _interopRequireDefault(require("react-bootstrap/Container"));
 
 var _Jumbotron = _interopRequireDefault(require("react-bootstrap/Jumbotron"));
@@ -59,25 +57,5 @@ var Layout = function Layout(_ref) {
   }, children), footer && /*#__PURE__*/React.createElement(_Footer.Footer, null, footerChildren));
 };
 
-Layout.propTypes = {
-  /** If true, the main container will be fluid. */
-  fluid: _propTypes.default.bool,
-  footer: _propTypes.default.bool,
-  children: _propTypes.default.node.isRequired,
-  title: _propTypes.default.string,
-  pageTitle: _propTypes.default.string,
-
-  /** Background color for the jumbotron. Use boostrap theme colours (primary, danger, etc) */
-  jumbotronBg: _propTypes.default.string,
-  style: _propTypes.default.object,
-  navBg: _propTypes.default.string,
-  footerChildren: _propTypes.default.node
-};
-Layout.defaultProps = {
-  fluid: false,
-  footer: true,
-  showTitle: true,
-  pageTitle: 'PAGE TITLE'
-};
 var _default = Layout;
 exports.default = _default;

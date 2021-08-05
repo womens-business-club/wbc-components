@@ -7,8 +7,6 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _propTypes = _interopRequireDefault(require("prop-types"));
-
 var _Section = require("../Section");
 
 var _footerTop = _interopRequireDefault(require("./footer-top.svg"));
@@ -79,19 +77,8 @@ var Footer = function Footer(_ref) {
     service: "twitter",
     img: _twitter.default
   })))));
-};
-
-Footer.propTypes = {
-  email: _react.default.PropTypes.string,
-  phone: _react.default.PropTypes.string,
-
-  /** Typically used to add site specific links. */
-  children: _react.default.PropTypes.node
-};
-Footer.defaultProps = {
-  email: 'hello@womensbusiness.club',
-  phone: '020 3960 0271'
 }; // Make sure the icon filename is the same as the service here.
+
 
 var SocialLink = function SocialLink(_ref2) {
   var url = _ref2.url,

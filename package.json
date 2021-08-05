@@ -1,6 +1,6 @@
 {
     "name": "@womens-business-club/wbc-components",
-    "version": "0.2.10",
+    "version": "0.2.11",
     "main": "dist/index.js",
     "private": false,
     "files": [
@@ -19,7 +19,6 @@
         "bootstrap": "^4.6.0",
         "css-loader": "^4.3.0",
         "node-sass": "^6.0.1",
-        "prop-types": "^15.7.2",
         "react-bootstrap": "^1.6.1",
         "sass-loader": "^10.2.0",
         "style-loader": "^1.3.0",
