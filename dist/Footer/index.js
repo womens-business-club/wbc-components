@@ -7,7 +7,7 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _Section = require("../Section");
+var _Section = _interopRequireDefault(require("../Section"));
 
 var _footerTop = _interopRequireDefault(require("./footer-top.svg"));
 
@@ -29,7 +29,7 @@ var Footer = function Footer(_ref) {
   var email = _ref.email,
       phone = _ref.phone,
       children = _ref.children;
-  return /*#__PURE__*/_react.default.createElement(_Section.Section, {
+  return /*#__PURE__*/_react.default.createElement(_Section.default, {
     bg: "none",
     color: "dark",
     className: "mt-5",

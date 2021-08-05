@@ -5,7 +5,7 @@ import NavBar from '../NavBar'
 import Footer from '../Footer'
 import Seo from '../Seo'
 
-const Layout = ({ fluid, footer, children, websiteTitle, showWebsiteTitle, pageTitle, jumbotronBg, style, navBg, footerChildren, seoDescription, seoUrl, seoStatcounterProject, seoStatcounterSecurity, seoEnableManychat }) => {
+const Layout = ({ fluid, footer, children, websiteTitle, showWebsiteTitle, pageTitle, jumbotronBg, style, navBg, footerChildren, footerEmail, footerPhone, seoDescription, seoUrl, seoStatcounterProject, seoStatcounterSecurity, seoEnableManychat }) => {
     return (
         <>
             <Seo title={pageTitle} websiteTitle={websiteTitle} description={seoDescription} url={seoUrl} statcounterProject={seoStatcounterProject} statcounterSecurity={seoStatcounterSecurity} enableManychat={seoEnableManychat} />
@@ -20,7 +20,7 @@ const Layout = ({ fluid, footer, children, websiteTitle, showWebsiteTitle, pageT
             <Container style={{ ...style, overflow: 'hidden' }} fluid={fluid}>
                 {children}
             </Container>
-            {footer && <Footer>{footerChildren}</Footer>}
+            {footer && <Footer email={footerEmail} phone={footerPhone}>{footerChildren}</Footer>}
         </>
     )
 }

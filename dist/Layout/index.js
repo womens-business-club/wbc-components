@@ -42,6 +42,8 @@ var Layout = function Layout(_ref) {
       style = _ref.style,
       navBg = _ref.navBg,
       footerChildren = _ref.footerChildren,
+      footerEmail = _ref.footerEmail,
+      footerPhone = _ref.footerPhone,
       seoDescription = _ref.seoDescription,
       seoUrl = _ref.seoUrl,
       seoStatcounterProject = _ref.seoStatcounterProject,
@@ -67,7 +69,10 @@ var Layout = function Layout(_ref) {
       overflow: 'hidden'
     }),
     fluid: fluid
-  }, children), footer && /*#__PURE__*/React.createElement(_Footer.default, null, footerChildren));
+  }, children), footer && /*#__PURE__*/React.createElement(_Footer.default, {
+    email: footerEmail,
+    phone: footerPhone
+  }, footerChildren));
 };
 
 var _default = Layout;

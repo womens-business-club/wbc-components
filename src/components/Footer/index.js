@@ -1,7 +1,7 @@
 import React from 'react'
-import { Section } from '../Section'
+import Section from '../Section'
 import img from './footer-top.svg'
-import { Container, Row, Col, Nav } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 
 import facebook from './facebook.svg'
 import instagram from './instagram.svg'
