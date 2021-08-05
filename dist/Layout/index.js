@@ -13,11 +13,11 @@ var _Container = _interopRequireDefault(require("react-bootstrap/Container"));
 
 var _Jumbotron = _interopRequireDefault(require("react-bootstrap/Jumbotron"));
 
-var _NavBar = require("../NavBar");
+var _NavBar = _interopRequireDefault(require("../NavBar"));
 
-var _Footer = require("../Footer");
+var _Footer = _interopRequireDefault(require("../Footer"));
 
-var _Seo = require("../Seo");
+var _Seo = _interopRequireDefault(require("../Seo"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -47,7 +47,7 @@ var Layout = function Layout(_ref) {
       seoStatcounterProject = _ref.seoStatcounterProject,
       seoStatcounterSecurity = _ref.seoStatcounterSecurity,
       seoEnableManychat = _ref.seoEnableManychat;
-  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(_Seo.Seo, {
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(_Seo.default, {
     title: pageTitle,
     websiteTitle: websiteTitle,
     description: seoDescription,
@@ -55,7 +55,7 @@ var Layout = function Layout(_ref) {
     statcounterProject: seoStatcounterProject,
     statcounterSecurity: seoStatcounterSecurity,
     enableManychat: seoEnableManychat
-  }), showWebsiteTitle && /*#__PURE__*/React.createElement(_NavBar.NavBar, {
+  }), showWebsiteTitle && /*#__PURE__*/React.createElement(_NavBar.default, {
     bg: navBg,
     title: websiteTitle
   }), pageTitle && /*#__PURE__*/React.createElement(_Jumbotron.default, {
@@ -67,7 +67,7 @@ var Layout = function Layout(_ref) {
       overflow: 'hidden'
     }),
     fluid: fluid
-  }, children), footer && /*#__PURE__*/React.createElement(_Footer.Footer, null, footerChildren));
+  }, children), footer && /*#__PURE__*/React.createElement(_Footer.default, null, footerChildren));
 };
 
 var _default = Layout;

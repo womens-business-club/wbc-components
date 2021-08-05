@@ -1,9 +1,9 @@
 import * as React from 'react'
 import Container from 'react-bootstrap/Container'
 import Jumbotron from 'react-bootstrap/Jumbotron'
-import { NavBar } from '../NavBar'
-import { Footer } from '../Footer'
-import { Seo } from '../Seo'
+import NavBar from '../NavBar'
+import Footer from '../Footer'
+import Seo from '../Seo'
 
 const Layout = ({ fluid, footer, children, websiteTitle, showWebsiteTitle, pageTitle, jumbotronBg, style, navBg, footerChildren, seoDescription, seoUrl, seoStatcounterProject, seoStatcounterSecurity, seoEnableManychat }) => {
     return (
