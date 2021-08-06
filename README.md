@@ -12,6 +12,37 @@ npm i git@github.com:womens-business-club/wbc-components.git
 
 
 ## Layout.js Template
-```jsx
+```js
+import * as React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+
+import { Layout as ImportedLayout } from '@womens-business-club/wbc-components'
+
+const Layout = ({ fluid, footer, children, showWebsiteTitle, pageTitle, jumbotronBg, navBg, style }) => {
+    const data = useStaticQuery(graphql`
+        query SiteQuery {
+            site {
+                siteMetadata {
+                    title
+                    description
+                    url
+                    statcounterProject
+                    statcounterSecurity
+                    enableManychat
+                }
+            }
+        }
+    `)
+
+    return (
+        <ImportedLayout fluid={fluid} footer={footer} websiteTitle={data.site.siteMetadata.title} showWebsiteTitle={showWebsiteTitle} pageTitle={pageTitle} jumbotronBg={jumbotronBg} style={style} navBg={navBg} footerChildren={<FooterChildren />} seoDescription={data.site.siteMetadata.description} seoUrl={data.site.siteMetadata.url} seoStatcounterProject={data.site.siteMetadata.statcounterProject} statcounterSecurity={data.site.siteMetadata.statcounterSecurity} seoEnableManychat={data.site.siteMetadata.enableManychat}>{children}</ImportedLayout>
+    )
+}
+
+const FooterChildren = () => (
+    <p>Footer children example</p>
+)
+
+export default Layout
 
 ```
