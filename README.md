@@ -29,13 +29,15 @@ const Layout = ({ fluid, footer, children, showWebsiteTitle, pageTitle, jumbotro
                     statcounterProject
                     statcounterSecurity
                     enableManychat
+                    phone
+                    email
                 }
             }
         }
     `)
 
     return (
-        <ImportedLayout fluid={fluid} footer={footer} websiteTitle={data.site.siteMetadata.title} showWebsiteTitle={showWebsiteTitle} pageTitle={pageTitle} jumbotronBg={jumbotronBg} style={style} navBg={navBg} footerChildren={<FooterChildren />} seoDescription={data.site.siteMetadata.description} seoUrl={data.site.siteMetadata.url} seoStatcounterProject={data.site.siteMetadata.statcounterProject} statcounterSecurity={data.site.siteMetadata.statcounterSecurity} seoEnableManychat={data.site.siteMetadata.enableManychat}>{children}</ImportedLayout>
+        <ImportedLayout fluid={fluid} footer={footer} websiteTitle={data.site.siteMetadata.title} showWebsiteTitle={showWebsiteTitle} pageTitle={pageTitle} jumbotronBg={jumbotronBg} style={style} navBg={navBg} footerChildren={<FooterChildren />} seoDescription={data.site.siteMetadata.description} seoUrl={data.site.siteMetadata.url} seoStatcounterProject={data.site.siteMetadata.statcounterProject} statcounterSecurity={data.site.siteMetadata.statcounterSecurity} seoEnableManychat={data.site.siteMetadata.enableManychat} footerEmail={data.site.siteMetadata.email} footerPhone={data.site.siteMetadata.phone}>{children}</ImportedLayout>
     )
 }
 
