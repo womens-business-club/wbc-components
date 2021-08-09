@@ -26,7 +26,8 @@ var NavBar = function NavBar(_ref) {
       marginBottom: '-1px'
     }
   }, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Container, null, title && /*#__PURE__*/_react.default.createElement(_reactBootstrap.Navbar.Brand, {
-    href: "/"
+    href: "/",
+    className: "font-weight-bold"
   }, /*#__PURE__*/_react.default.createElement("img", {
     src: _logo.default,
     style: {

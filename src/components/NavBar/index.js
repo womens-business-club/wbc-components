@@ -9,7 +9,7 @@ const NavBar = ({ title, bg }) => {
             <Navbar bg={bg ? bg : 'dark'} variant='dark' expand='lg' style={{ marginBottom: '-1px' }}>
                 <Container>
                     {title && (
-                    <Navbar.Brand href='/'><img src={logo} style={{ width: '50px', marginRight: '1rem' }} />{title}</Navbar.Brand>
+                    <Navbar.Brand href='/' className="font-weight-bold"><img src={logo} style={{ width: '50px', marginRight: '1rem' }} />{title}</Navbar.Brand>
                     )}
                     {/* <Navbar.Toggle aria-controls='basic-navbar-nav' /> */}
                     {/* <Navbar.Collapse id='basic-navbar-nav'> */}
