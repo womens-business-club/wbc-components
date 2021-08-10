@@ -20,7 +20,7 @@ const Section = ({ bg, children, className, style, fluid }) => {
 
     return (
         <div style={style} className={`section bg-${bg} ${className}`}>
-            <Container fluid={fluid} style={containerStyle}>{children}</Container>
+            <Container fluid={fluid} style={fluid && {...removeEdges}}>{children}</Container>
         </div>
     )
 }
