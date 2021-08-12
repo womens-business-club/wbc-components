@@ -9,13 +9,13 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactBootstrap = require("react-bootstrap");
 
-var _Layout = _interopRequireDefault(require("./Layout"));
+var _index = _interopRequireDefault(require("./index"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
   title: 'Layout',
-  component: _Layout.default // argTypes: {
+  component: _index.default // argTypes: {
   //     fluid: {control: 'bool'}
   // },
 
@@ -23,7 +23,7 @@ var _default = {
 exports.default = _default;
 
 var Template = function Template(args) {
-  return /*#__PURE__*/_react.default.createElement(_Layout.default, args, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Row, {
+  return /*#__PURE__*/_react.default.createElement(_index.default, args, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Row, {
     className: "mt-5"
   }, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Col, null, /*#__PURE__*/_react.default.createElement("p", null, "This is a layout"))));
 };
@@ -33,7 +33,14 @@ exports.Default = Default;
 Default.args = {
   fluid: false,
   footer: true,
-  title: 'Default',
+  websiteTitle: 'Default',
+  showWebsiteTitle: true,
   pageTitle: 'Page Title',
-  jumbotronBg: ''
+  jumbotronBg: 'warning',
+  navBg: 'danger',
+  navBorder: true,
+  seoDescription: 'This is a description',
+  seoUrl: 'http://www.example.com',
+  footerEmail: 'hello@womensbusiness.club',
+  footerPhone: '555 555 555'
 };

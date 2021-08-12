@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
-import Layout from './Layout'
+import Layout from './index'
 
 export default {
     title: 'Layout',
@@ -27,8 +27,14 @@ export const Default = Template.bind({})
 Default.args = {
     fluid: false,
     footer: true,
-    title: 'Default',
+    websiteTitle: 'Default',
+    showWebsiteTitle: true,
     pageTitle: 'Page Title',
-    jumbotronBg: '',
-    
+    jumbotronBg: 'warning',
+    navBg: 'danger',
+    navBorder: true,
+    seoDescription: 'This is a description',
+    seoUrl: 'http://www.example.com',
+    footerEmail: 'hello@womensbusiness.club',
+    footerPhone: '555 555 555'
 }

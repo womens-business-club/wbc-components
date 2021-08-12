@@ -28,7 +28,7 @@ var NavBar = function NavBar(_ref) {
       marginBottom: '-1px'
     },
     className: border && 'navbar-border-bottom'
-  }, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Container, null, title && /*#__PURE__*/_react.default.createElement(_reactBootstrap.Navbar.Brand, {
+  }, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Container, null, title && !brandImage && /*#__PURE__*/_react.default.createElement(_reactBootstrap.Navbar.Brand, {
     href: "/",
     className: "font-weight-bold"
   }, /*#__PURE__*/_react.default.createElement("img", {
@@ -37,7 +37,12 @@ var NavBar = function NavBar(_ref) {
       width: '50px',
       marginRight: '1rem'
     }
-  }), title), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Nav, {
+  }), title), brandImage && /*#__PURE__*/_react.default.createElement(_reactBootstrap.Navbar.Brand, {
+    href: "/",
+    className: "font-weight-bold"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: brandImage
+  })), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Nav, {
     className: "ml-auto"
   }))));
 };

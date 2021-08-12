@@ -8,8 +8,12 @@ const NavBar = ({ title, bg, border, brandImage }) => {
         <>
             <Navbar bg={bg ? bg : 'dark'} variant='dark' expand='lg' style={{ marginBottom: '-1px' }} className={border && 'navbar-border-bottom'}>
                 <Container>
-                    {title && (
+                    {title && !brandImage && (
                     <Navbar.Brand href='/' className="font-weight-bold"><img src={logo} style={{ width: '50px', marginRight: '1rem' }} />{title}</Navbar.Brand>
+                    )}
+                    {brandImage && (
+                                            <Navbar.Brand href='/' className="font-weight-bold"><img src={brandImage} /></Navbar.Brand>
+
                     )}
                     {/* <Navbar.Toggle aria-controls='basic-navbar-nav' /> */}
                     {/* <Navbar.Collapse id='basic-navbar-nav'> */}
