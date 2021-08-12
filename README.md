@@ -59,7 +59,7 @@ export default Layout
 ## Navbar.js Template
 ```js
 import * as React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
 import { Nav, NavDropdown } from 'react-bootstrap'
 
 
@@ -67,7 +67,7 @@ import { Navbar as ImportedNavBar } from '@womens-business-club/wbc-components'
 
 const Navbar = ({bg, border, brandImage}) => {
     const data = useStaticQuery(graphql`
-        query SiteQuery {
+        query {
             site {
                 siteMetadata {
                     title
@@ -88,8 +88,7 @@ const Navbar = ({bg, border, brandImage}) => {
             <Nav.Link href='#home'>Home</Nav.Link>
             <Nav.Link href='#link'>Link</Nav.Link>
             <NavDropdown title='Locations' id='basic-nav-dropdown'>
-                <NavDropdown.Item href='/about'>About Us</NavDropdown.Item>
-                <NavDropdown.Item href='/success-story'>Success Story</NavDropdown.Item>
+                <Link to='/about' className="dropdown-item">About Us</Link>
             </NavDropdown>
         </ImportedNavBar>
     )
