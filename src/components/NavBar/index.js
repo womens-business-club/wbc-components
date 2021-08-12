@@ -1,12 +1,12 @@
 import React from 'react'
-import { Navbar, Nav, Container } from 'react-bootstrap'
+import { Navbar, Nav, Container, NavDropdown, Button } from 'react-bootstrap'
 import image from './nav-bottom.svg'
 import logo from './logo.svg'
 
-const NavBar = ({ title, bg, border, brandImage }) => {
+const NavBar = ({ title, bg, border, brandImage, children }) => {
     return (
         <>
-            <Navbar bg={bg ? bg : 'dark'} variant='dark' expand='lg' style={{ marginBottom: '-1px' }} className={border && 'navbar-border-bottom'}>
+            <Navbar bg={bg ? bg : 'dark'} variant='dark' expand='sm' style={{ marginBottom: '-1px' }} className={border && 'navbar-border-bottom'}>
                 <Container>
                     {title && !brandImage && (
                         <Navbar.Brand href='/' className='font-weight-bold'>
@@ -19,21 +19,14 @@ const NavBar = ({ title, bg, border, brandImage }) => {
                             <img src={brandImage} />
                         </Navbar.Brand>
                     )}
-                    {/* <Navbar.Toggle aria-controls='basic-navbar-nav' /> */}
-                    {/* <Navbar.Collapse id='basic-navbar-nav'> */}
-                    <Nav className='ml-auto'>{/* <NavDropdown title="Discover" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="/about">
-                            About Us
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="/success-story">
-                            Success Story
-                        </NavDropdown.Item>
-                    </NavDropdown>
-                    <Button className="ml-3">Sign In</Button> */}</Nav>
-                    {/* </Navbar.Collapse> */}
+                    <Navbar.Toggle aria-controls='basic-navbar-nav' />
+                    <Navbar.Collapse id='basic-navbar-nav'>
+                        <Nav className='ml-auto'>
+                            {children}
+                        </Nav>
+                    </Navbar.Collapse>
                 </Container>
             </Navbar>
-            {/* <img src={image} className='mb-5' alt='' /> */}
         </>
     )
 }

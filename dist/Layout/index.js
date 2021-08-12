@@ -59,11 +59,6 @@ var Layout = function Layout(_ref) {
     statcounterProject: seoStatcounterProject,
     statcounterSecurity: seoStatcounterSecurity,
     enableManychat: seoEnableManychat
-  }), showWebsiteTitle && /*#__PURE__*/React.createElement(_NavBar.default, {
-    bg: navBg,
-    title: websiteTitle,
-    border: navBorder,
-    brandImage: navBrandImage
   }), pageTitle && /*#__PURE__*/React.createElement(_Jumbotron.default, {
     className: jumbotronBg ? "bg-".concat(jumbotronBg, " text-white") : "bg-dark text-white"
   }, /*#__PURE__*/React.createElement(_Container.default, null, /*#__PURE__*/React.createElement("h1", {

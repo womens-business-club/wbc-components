@@ -19,11 +19,12 @@ var NavBar = function NavBar(_ref) {
   var title = _ref.title,
       bg = _ref.bg,
       border = _ref.border,
-      brandImage = _ref.brandImage;
+      brandImage = _ref.brandImage,
+      children = _ref.children;
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Navbar, {
     bg: bg ? bg : 'dark',
     variant: "dark",
-    expand: "lg",
+    expand: "sm",
     style: {
       marginBottom: '-1px'
     },
@@ -42,9 +43,13 @@ var NavBar = function NavBar(_ref) {
     className: "navbar-custom-brand-image"
   }, /*#__PURE__*/_react.default.createElement("img", {
     src: brandImage
-  })), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Nav, {
+  })), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Navbar.Toggle, {
+    "aria-controls": "basic-navbar-nav"
+  }), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Navbar.Collapse, {
+    id: "basic-navbar-nav"
+  }, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Nav, {
     className: "ml-auto"
-  }))));
+  }, children)))));
 };
 
 var _default = NavBar;

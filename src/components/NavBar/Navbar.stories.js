@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Row } from 'react-bootstrap'
+import { Col, Row, Nav, NavDropdown } from 'react-bootstrap'
 import Navbar from './index'
 
 export default {
@@ -12,7 +12,14 @@ export default {
 
 const Template = (args) => {
     return (
-        <Navbar {...args} />
+        <Navbar {...args}>
+            <Nav.Link href='#home'>Home</Nav.Link>
+            <Nav.Link href='#link'>Link</Nav.Link>
+            <NavDropdown title='Locations' id='basic-nav-dropdown'>
+                <NavDropdown.Item href='/about'>Example 1</NavDropdown.Item>
+                <NavDropdown.Item href='/success-story'>Success Story</NavDropdown.Item>
+            </NavDropdown>
+        </Navbar>
     )
 }
 
@@ -23,5 +30,5 @@ Default.args = {
     title: 'Navbar Title',
     border: true,
     /** Max height: 50px */
-    brandImage: 'http://placehold.co/200x50'
+    brandImage: 'http://placehold.co/200x50',
 }

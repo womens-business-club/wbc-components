@@ -23,7 +23,18 @@ var _default = {
 exports.default = _default;
 
 var Template = function Template(args) {
-  return /*#__PURE__*/_react.default.createElement(_index.default, args);
+  return /*#__PURE__*/_react.default.createElement(_index.default, args, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Nav.Link, {
+    href: "#home"
+  }, "Home"), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Nav.Link, {
+    href: "#link"
+  }, "Link"), /*#__PURE__*/_react.default.createElement(_reactBootstrap.NavDropdown, {
+    title: "Locations",
+    id: "basic-nav-dropdown"
+  }, /*#__PURE__*/_react.default.createElement(_reactBootstrap.NavDropdown.Item, {
+    href: "/about"
+  }, "Example 1"), /*#__PURE__*/_react.default.createElement(_reactBootstrap.NavDropdown.Item, {
+    href: "/success-story"
+  }, "Success Story")));
 };
 
 var Default = Template.bind({});
