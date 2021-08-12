@@ -3,10 +3,10 @@ import { Navbar, Nav, Container } from 'react-bootstrap'
 import image from './nav-bottom.svg'
 import logo from './logo.svg'
 
-const NavBar = ({ title, bg }) => {
+const NavBar = ({ title, bg, border, brandImage }) => {
     return (
         <>
-            <Navbar bg={bg ? bg : 'dark'} variant='dark' expand='lg' style={{ marginBottom: '-1px' }}>
+            <Navbar bg={bg ? bg : 'dark'} variant='dark' expand='lg' style={{ marginBottom: '-1px' }} className={border && 'navbar-border-bottom'}>
                 <Container>
                     {title && (
                     <Navbar.Brand href='/' className="font-weight-bold"><img src={logo} style={{ width: '50px', marginRight: '1rem' }} />{title}</Navbar.Brand>

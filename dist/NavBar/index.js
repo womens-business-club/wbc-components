@@ -17,14 +17,17 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var NavBar = function NavBar(_ref) {
   var title = _ref.title,
-      bg = _ref.bg;
+      bg = _ref.bg,
+      border = _ref.border,
+      brandImage = _ref.brandImage;
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Navbar, {
     bg: bg ? bg : 'dark',
     variant: "dark",
     expand: "lg",
     style: {
       marginBottom: '-1px'
-    }
+    },
+    className: border && 'navbar-border-bottom'
   }, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Container, null, title && /*#__PURE__*/_react.default.createElement(_reactBootstrap.Navbar.Brand, {
     href: "/",
     className: "font-weight-bold"

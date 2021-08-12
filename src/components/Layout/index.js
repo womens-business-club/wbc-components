@@ -5,11 +5,11 @@ import NavBar from '../NavBar'
 import Footer from '../Footer'
 import Seo from '../Seo'
 
-const Layout = ({ fluid, footer, children, websiteTitle, showWebsiteTitle, pageTitle, jumbotronBg, style, navBg, footerChildren, footerEmail, footerPhone, seoDescription, seoUrl, seoStatcounterProject, seoStatcounterSecurity, seoEnableManychat }) => {
+const Layout = ({ fluid, footer, children, websiteTitle, showWebsiteTitle, pageTitle, jumbotronBg, style, navBg, navBorder, footerChildren, footerEmail, footerPhone, seoDescription, seoUrl, seoStatcounterProject, seoStatcounterSecurity, seoEnableManychat }) => {
     return (
         <>
             <Seo title={pageTitle} websiteTitle={websiteTitle} description={seoDescription} url={seoUrl} statcounterProject={seoStatcounterProject} statcounterSecurity={seoStatcounterSecurity} enableManychat={seoEnableManychat} />
-            {showWebsiteTitle && <NavBar bg={navBg} title={websiteTitle} />}
+            {showWebsiteTitle && <NavBar bg={navBg} title={websiteTitle} border={navBorder} />}
             {pageTitle && (
                 <Jumbotron className={jumbotronBg ? `bg-${jumbotronBg} text-white` : `bg-dark text-white`}>
                     <Container>
