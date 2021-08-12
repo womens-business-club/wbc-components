@@ -90,6 +90,10 @@ ul.para {
     }
 }
 
+.navbar-custom-brand-image>img {
+    max-height: 50px;
+}
+
 hr {
     border-top: 2px solid $primary !important;
 }

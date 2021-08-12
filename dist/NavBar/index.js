@@ -39,7 +39,7 @@ var NavBar = function NavBar(_ref) {
     }
   }), title), brandImage && /*#__PURE__*/_react.default.createElement(_reactBootstrap.Navbar.Brand, {
     href: "/",
-    className: "font-weight-bold"
+    className: "navbar-custom-brand-image"
   }, /*#__PURE__*/_react.default.createElement("img", {
     src: brandImage
   })), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Nav, {
