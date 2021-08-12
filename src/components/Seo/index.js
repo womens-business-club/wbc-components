@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 const Seo = ({title, websiteTitle, description, url, statcounterProject, statcounterSecurity, enableManychat}) => {
     const pageTitle = title ? `${title} - ${websiteTitle}` : websiteTitle
     const image = `/img/og-image.png`
-    const favicon = `/img/logo.svg`
+    const favicon = `/img/favion.svg`
     // 1200 pixels x 627 pixels
 
     return (
