@@ -11,13 +11,10 @@ import twitter from './twitter.svg'
 
 const Footer = ({email, phone, children}) => {
     return (
-        <Section bg='none' color='dark' className='mt-5' style={{ background: `url(${img}) no-repeat`, backgroundSize: 'cover', paddingTop: '13rem', paddingBottom: '6.5rem' }}>
+        <Section bg='none' color='dark' className='mt-5' style={{ background: `url(${img}) no-repeat`, backgroundSize: 'cover', paddingTop: '15rem', paddingBottom: '6.5rem' }}>
             <Container>
                 {children}
                 <Row className='mt-4'>
-                    <Col>
-                        <a href="https://womensbusiness.club" target='_blank' rel='noreferrer' className="text-dark">womensbusiness.club</a>
-                    </Col>
                     <Col className='text-dark text-md-right'>
                         <h5>Contact</h5>
                         <p>
@@ -29,7 +26,7 @@ const Footer = ({email, phone, children}) => {
                 </Row>
                 <Row className='mt-5'>
                     <Col xs={12} md={6} className='text-dark'>
-                        <p>Women's Business Club © {new Date().getFullYear()}</p>
+                        <p><a href="https://womensbusiness.club" target='_blank' rel='noreferrer' className="text-dark">Women's Business Club</a> © {new Date().getFullYear()}</p>
                     </Col>
                     <Col className='text-md-right'>
                         <SocialLink url='https://www.facebook.com/wombizclub' service='facebook' img={facebook} />

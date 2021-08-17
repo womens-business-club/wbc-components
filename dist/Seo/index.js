@@ -21,7 +21,7 @@ var Seo = function Seo(_ref) {
       enableManychat = _ref.enableManychat;
   var pageTitle = title ? "".concat(title, " - ").concat(websiteTitle) : websiteTitle;
   var image = "/img/og-image.png";
-  var favicon = "/img/favion.svg"; // 1200 pixels x 627 pixels
+  var favicon = "/img/favicon.svg"; // 1200 pixels x 627 pixels
 
   return /*#__PURE__*/_react.default.createElement(_reactHelmet.default, null, /*#__PURE__*/_react.default.createElement("title", null, pageTitle), /*#__PURE__*/_react.default.createElement("link", {
     rel: "icon",
