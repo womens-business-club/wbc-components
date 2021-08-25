@@ -9,8 +9,6 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactBootstrap = require("react-bootstrap");
 
-var _navBottom = _interopRequireDefault(require("./nav-bottom.svg"));
-
 var _logo = _interopRequireDefault(require("./logo.svg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -20,7 +18,8 @@ var NavBar = function NavBar(_ref) {
       bg = _ref.bg,
       border = _ref.border,
       brandImage = _ref.brandImage,
-      children = _ref.children;
+      children = _ref.children,
+      collapse = _ref.collapse;
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Navbar, {
     bg: bg ? bg : 'dark',
     variant: "dark",
@@ -43,13 +42,15 @@ var NavBar = function NavBar(_ref) {
     className: "navbar-custom-brand-image"
   }, /*#__PURE__*/_react.default.createElement("img", {
     src: brandImage
-  })), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Navbar.Toggle, {
+  })), collapse ? /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Navbar.Toggle, {
     "aria-controls": "basic-navbar-nav"
   }), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Navbar.Collapse, {
     id: "basic-navbar-nav"
   }, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Nav, {
     className: "ml-auto"
-  }, children)))));
+  }, children))) : /*#__PURE__*/_react.default.createElement(_reactBootstrap.Nav, {
+    className: "ml-auto"
+  }, children))));
 };
 
 var _default = NavBar;

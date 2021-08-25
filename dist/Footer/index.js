@@ -36,10 +36,10 @@ var Footer = function Footer(_ref) {
     style: {
       background: "url(".concat(_footerTop.default, ") no-repeat"),
       backgroundSize: 'cover',
-      paddingTop: '15rem',
+      paddingTop: '13rem',
       paddingBottom: '6.5rem'
     }
-  }, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Container, null, children, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Row, {
+  }, children, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Row, {
     className: "mt-4"
   }, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Col, {
     className: "text-dark text-md-right"
@@ -54,7 +54,7 @@ var Footer = function Footer(_ref) {
     target: "_blank",
     rel: "noreferrer",
     className: "text-dark"
-  }, "Women's Business Club"), " \xA9 ", new Date().getFullYear())), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Col, {
+  }, "Women's Business Club"), ' ', "\xA9 ", new Date().getFullYear())), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Col, {
     className: "text-md-right"
   }, /*#__PURE__*/_react.default.createElement(SocialLink, {
     url: "https://www.facebook.com/wombizclub",
@@ -76,7 +76,7 @@ var Footer = function Footer(_ref) {
     url: "https://twitter.com/wombizclub",
     service: "twitter",
     img: _twitter.default
-  })))));
+  }))));
 }; // Make sure the icon filename is the same as the service here.
 
 

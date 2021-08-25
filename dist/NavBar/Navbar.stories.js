@@ -45,5 +45,6 @@ Default.args = {
   border: true,
 
   /** Max height: 50px */
-  brandImage: 'http://placehold.co/200x50'
+  brandImage: 'http://placehold.co/200x50',
+  collapse: true
 };
