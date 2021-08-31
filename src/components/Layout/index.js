@@ -10,7 +10,7 @@ const Layout = ({ fluid, footer, children, websiteTitle, pageTitle, jumbotronBg,
             {pageTitle && (
                 <Jumbotron className={jumbotronBg ? `bg-${jumbotronBg} text-white rounded-0` : `bg-dark text-white rounded-0`}>
                     <Container>
-                        <h1 className='display-4 font-weight-bold'>{pageTitle}</h1>
+                        <h1 className='font-weight-bold'>{pageTitle}</h1>
                     </Container>
                 </Jumbotron>
             )}
