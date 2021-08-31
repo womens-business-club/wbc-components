@@ -1,15 +1,12 @@
 import * as React from 'react'
 import Container from 'react-bootstrap/Container'
 import Jumbotron from 'react-bootstrap/Jumbotron'
-import NavBar from '../NavBar'
-import Footer from '../Footer'
 import Seo from '../Seo'
 
-const Layout = ({ fluid, footer, children, websiteTitle, showWebsiteTitle, pageTitle, jumbotronBg, style, navBg, navBorder, navBrandImage, footerChildren, footerEmail, footerPhone, seoDescription, seoUrl, seoStatcounterProject, seoStatcounterSecurity, seoEnableManychat }) => {
+const Layout = ({ fluid, footer, children, websiteTitle, pageTitle, jumbotronBg, style, seoDescription, seoUrl, seoStatcounterProject, seoStatcounterSecurity, seoEnableManychat }) => {
     return (
         <>
             <Seo title={pageTitle} websiteTitle={websiteTitle} description={seoDescription} url={seoUrl} statcounterProject={seoStatcounterProject} statcounterSecurity={seoStatcounterSecurity} enableManychat={seoEnableManychat} />
-            {/* {showWebsiteTitle && <NavBar bg={navBg} title={websiteTitle} border={navBorder} brandImage={navBrandImage} />} */}
             {pageTitle && (
                 <Jumbotron className={jumbotronBg ? `bg-${jumbotronBg} text-white` : `bg-dark text-white`}>
                     <Container>
@@ -20,7 +17,6 @@ const Layout = ({ fluid, footer, children, websiteTitle, showWebsiteTitle, pageT
             <Container style={{ ...style, overflow: 'hidden' }} fluid={fluid}>
                 {children}
             </Container>
-            {footer && <Footer email={footerEmail} phone={footerPhone}>{footerChildren}</Footer>}
         </>
     )
 }

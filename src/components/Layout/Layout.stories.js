@@ -1,6 +1,7 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 import Layout from './index'
+import { Footer, Navbar } from '../index'
 
 export default {
     title: 'Layout',
@@ -13,7 +14,7 @@ export default {
 const Template = (args) => {
     return (
         <Layout {...args}>
-            <Row className="mt-5">
+            <Row className='mt-5'>
                 <Col>
                     <p>This is a layout</p>
                 </Col>
@@ -22,7 +23,24 @@ const Template = (args) => {
     )
 }
 
+const WithNavAndFooterTemplate = (args) => {
+    return (
+        <>
+            <Navbar title="Example" />
+            <Layout {...args}>
+                <Row className='mt-5'>
+                    <Col>
+                        <p>This is a layout</p>
+                    </Col>
+                </Row>
+            </Layout>
+            <Footer email="EMAIL" phone="PHONE" />
+        </>
+    )
+}
+
 export const Default = Template.bind({})
+export const WithNavAndFooter = WithNavAndFooterTemplate.bind({})
 
 Default.args = {
     fluid: false,
@@ -36,5 +54,5 @@ Default.args = {
     seoDescription: 'This is a description',
     seoUrl: 'http://www.example.com',
     footerEmail: 'hello@womensbusiness.club',
-    footerPhone: '555 555 555'
+    footerPhone: '555 555 555',
 }

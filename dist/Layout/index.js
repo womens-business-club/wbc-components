@@ -13,10 +13,6 @@ var _Container = _interopRequireDefault(require("react-bootstrap/Container"));
 
 var _Jumbotron = _interopRequireDefault(require("react-bootstrap/Jumbotron"));
 
-var _NavBar = _interopRequireDefault(require("../NavBar"));
-
-var _Footer = _interopRequireDefault(require("../Footer"));
-
 var _Seo = _interopRequireDefault(require("../Seo"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -36,16 +32,9 @@ var Layout = function Layout(_ref) {
       footer = _ref.footer,
       children = _ref.children,
       websiteTitle = _ref.websiteTitle,
-      showWebsiteTitle = _ref.showWebsiteTitle,
       pageTitle = _ref.pageTitle,
       jumbotronBg = _ref.jumbotronBg,
       style = _ref.style,
-      navBg = _ref.navBg,
-      navBorder = _ref.navBorder,
-      navBrandImage = _ref.navBrandImage,
-      footerChildren = _ref.footerChildren,
-      footerEmail = _ref.footerEmail,
-      footerPhone = _ref.footerPhone,
       seoDescription = _ref.seoDescription,
       seoUrl = _ref.seoUrl,
       seoStatcounterProject = _ref.seoStatcounterProject,
@@ -68,10 +57,7 @@ var Layout = function Layout(_ref) {
       overflow: 'hidden'
     }),
     fluid: fluid
-  }, children), footer && /*#__PURE__*/React.createElement(_Footer.default, {
-    email: footerEmail,
-    phone: footerPhone
-  }, footerChildren));
+  }, children));
 };
 
 var _default = Layout;
