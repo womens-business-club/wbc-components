@@ -16,16 +16,25 @@ npm i git@github.com:womens-business-club/wbc-components.git
 
 # Templates
 
-Use these teamplates to allow the univeral components on your page while also being able to add to them for the websites specific uses.
+Use these templates to allow the univeral components on your page while also being able to add to them for the websites specific uses.
+
+If the navbar and footer are present on every page, you can put them in the Layout too like this. Otherwise, make some logic for it.
 
 ## Layout.js Template
 ```js
-import * as React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import * as React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import Navbar from "./Navbar"
+import Footer from "./Footer"
+import { Layout as ImportedLayout } from "@womens-business-club/wbc-components"
 
-import { Layout as ImportedLayout } from '@womens-business-club/wbc-components'
-
-const Layout = ({ fluid, footer, children, showWebsiteTitle, pageTitle, jumbotronBg, navBg, navBrandImage, style }) => {
+const Layout = ({
+    fluid,
+    children,
+    pageTitle,
+    jumbotronBg,
+    style,
+}) => {
     const data = useStaticQuery(graphql`
         query SiteQuery {
             site {
@@ -36,24 +45,40 @@ const Layout = ({ fluid, footer, children, showWebsiteTitle, pageTitle, jumbotro
                     statcounterProject
                     statcounterSecurity
                     enableManychat
-                    phone
                     email
+                    phone
                 }
             }
         }
     `)
 
     return (
-        <ImportedLayout fluid={fluid} footer={footer} websiteTitle={data.site.siteMetadata.title} showWebsiteTitle={showWebsiteTitle} pageTitle={pageTitle} jumbotronBg={jumbotronBg} style={style} navBg={navBg} navBorder={navBorder} navBrandImage={navBrandImage} footerChildren={<FooterChildren data={data} />} seoDescription={data.site.siteMetadata.description} seoUrl={data.site.siteMetadata.url} seoStatcounterProject={data.site.siteMetadata.statcounterProject} statcounterSecurity={data.site.siteMetadata.statcounterSecurity} seoEnableManychat={data.site.siteMetadata.enableManychat} footerEmail={data.site.siteMetadata.email} footerPhone={data.site.siteMetadata.phone}>{children}</ImportedLayout>
+        <>
+            <Navbar />
+            <ImportedLayout
+                fluid={fluid}
+                websiteTitle={data.site.siteMetadata.title}
+                pageTitle={pageTitle}
+                jumbotronBg={jumbotronBg}
+                style={style}
+                seoDescription={data.site.siteMetadata.description}
+                seoUrl={data.site.siteMetadata.url}
+                seoStatcounterProject={
+                    data.site.siteMetadata.statcounterProject
+                }
+                seoStatcounterSecurity={
+                    data.site.siteMetadata.statcounterSecurity
+                }
+                seoEnableManychat={data.site.siteMetadata.enableManychat}
+            >
+                {children}
+            </ImportedLayout>
+            <Footer />
+        </>
     )
 }
 
-const FooterChildren = ({data}) => (
-    <p>Footer children example</p>
-)
-
 export default Layout
-
 ```
 
 ## Navbar.js Template
