@@ -8,9 +8,9 @@ const Layout = ({ fluid, footer, children, websiteTitle, pageTitle, jumbotronBg,
         <>
             <Seo title={pageTitle} websiteTitle={websiteTitle} description={seoDescription} url={seoUrl} statcounterProject={seoStatcounterProject} statcounterSecurity={seoStatcounterSecurity} enableManychat={seoEnableManychat} />
             {pageTitle && (
-                <Jumbotron className={jumbotronBg ? `bg-${jumbotronBg} text-white` : `bg-dark text-white`}>
+                <Jumbotron className={jumbotronBg ? `bg-${jumbotronBg} text-white rounded-0` : `bg-dark text-white rounded-0`}>
                     <Container>
-                        <h1 className='display-3 font-weight-bold'>{pageTitle}</h1>
+                        <h1 className='display-4 font-weight-bold'>{pageTitle}</h1>
                     </Container>
                 </Jumbotron>
             )}

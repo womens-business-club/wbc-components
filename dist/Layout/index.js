@@ -49,9 +49,9 @@ var Layout = function Layout(_ref) {
     statcounterSecurity: seoStatcounterSecurity,
     enableManychat: seoEnableManychat
   }), pageTitle && /*#__PURE__*/React.createElement(_Jumbotron.default, {
-    className: jumbotronBg ? "bg-".concat(jumbotronBg, " text-white") : "bg-dark text-white"
+    className: jumbotronBg ? "bg-".concat(jumbotronBg, " text-white rounded-0") : "bg-dark text-white rounded-0"
   }, /*#__PURE__*/React.createElement(_Container.default, null, /*#__PURE__*/React.createElement("h1", {
-    className: "display-3 font-weight-bold"
+    className: "display-4 font-weight-bold"
   }, pageTitle))), /*#__PURE__*/React.createElement(_Container.default, {
     style: _objectSpread(_objectSpread({}, style), {}, {
       overflow: 'hidden'
