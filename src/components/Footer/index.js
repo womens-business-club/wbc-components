@@ -9,9 +9,9 @@ import youtube from './youtube.svg'
 import linkedin from './linkedin.svg'
 import twitter from './twitter.svg'
 
-const Footer = ({ email, phone, children }) => {
+const Footer = ({ email, phone, children, className }) => {
     return (
-        <Section bg='none' color='dark' className='mt-5' style={{ background: `url(${img}) no-repeat`, backgroundSize: 'cover', paddingTop: '13rem', paddingBottom: '6.5rem' }}>
+        <Section bg='none' color='dark' className={className} style={{ background: `url(${img}) no-repeat`, backgroundSize: 'cover', paddingTop: '13rem', paddingBottom: '6.5rem' }}>
             {children}
             <Row className='mt-4'>
                 <Col className='text-dark text-md-right'>

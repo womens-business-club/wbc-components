@@ -28,11 +28,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Footer = function Footer(_ref) {
   var email = _ref.email,
       phone = _ref.phone,
-      children = _ref.children;
+      children = _ref.children,
+      className = _ref.className;
   return /*#__PURE__*/_react.default.createElement(_Section.default, {
     bg: "none",
     color: "dark",
-    className: "mt-5",
+    className: className,
     style: {
       background: "url(".concat(_footerTop.default, ") no-repeat"),
       backgroundSize: 'cover',
