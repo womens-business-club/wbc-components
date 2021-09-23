@@ -41,26 +41,27 @@ $display3-weight: 600;
 $display4-weight: 600;
 $display-line-height: 1.15;
 
-.mt {
-    &-6 {
-        margin-top: 6rem;
-    }
+// .mt {
+//     &-6 {
+//         margin-top: 6rem;
+//     }
 
-    &-7 {
-        margin-top: 10rem;
-    }
-}
+//     &-7 {
+//         margin-top: 10rem;
+//     }
+// }
 
-.p {
-    &t {
-        &-6 {
-            padding-top: 6rem;
-        }
-        &-7 {
-            padding-top: 10rem;
-        }
-    }
-}
+// .p {
+//     &t {
+//         &-6 {
+//             padding-top: 6rem;
+//         }
+//         &-7 {
+//             padding-top: 10rem;
+//         }
+//     }
+// }
+@import './margins-and-padding.scss';
 
 p.para,
 ul.para {
