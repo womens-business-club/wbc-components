@@ -1,6 +1,6 @@
 {
     "name": "@womens-business-club/wbc-components",
-    "version": "0.2.40",
+    "version": "0.2.41",
     "main": "dist/index.js",
     "private": false,
     "files": [
