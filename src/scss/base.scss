@@ -43,26 +43,26 @@ $display-line-height: 1.15;
 
 
 
-// .mt {
-//     &-6 {
-//         margin-top: 6rem;
-//     }
+.mt {
+    &-6 {
+        margin-top: 6rem;
+    }
 
-//     &-7 {
-//         margin-top: 10rem;
-//     }
-// }
+    &-7 {
+        margin-top: 10rem;
+    }
+}
 
-// .p {
-//     &t {
-//         &-6 {
-//             padding-top: 6rem;
-//         }
-//         &-7 {
-//             padding-top: 10rem;
-//         }
-//     }
-// }
+.p {
+    &t {
+        &-6 {
+            padding-top: 6rem;
+        }
+        &-7 {
+            padding-top: 10rem;
+        }
+    }
+}
 // @import './margins-and-padding.scss';
 
 p.para,
@@ -230,28 +230,28 @@ hr {
 // // Extra large devices (large desktops, 1200px and up)
 // @media (min-width: 1200px) { ... }
 
-$spacers: (
-    (
-        0: 0,
-        1: (
-            $spacer * 0.25,
-        ),
-        2: (
-            $spacer * 0.5,
-        ),
-        3: $spacer,
-        4: (
-            $spacer * 1.5,
-        ),
-        5: (
-            $spacer * 3,
-        ),
-        6: (
-            $spacer * 6,
-        ),
-        7: (
-            $spacer * 10,
-        ),
-    ),
-    $spacers
-);
+// $spacers: (
+//     (
+//         0: 0,
+//         1: (
+//             $spacer * 0.25,
+//         ),
+//         2: (
+//             $spacer * 0.5,
+//         ),
+//         3: $spacer,
+//         4: (
+//             $spacer * 1.5,
+//         ),
+//         5: (
+//             $spacer * 3,
+//         ),
+//         6: (
+//             $spacer * 6,
+//         ),
+//         7: (
+//             $spacer * 10,
+//         ),
+//     ),
+//     $spacers
+// );
