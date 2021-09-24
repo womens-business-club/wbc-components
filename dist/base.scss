@@ -41,6 +41,32 @@ $display3-weight: 600;
 $display4-weight: 600;
 $display-line-height: 1.15;
 
+$spacers: map-merge(
+    (
+        0: 0,
+        1: (
+            $spacer * 0.25,
+        ),
+        2: (
+            $spacer * 0.5,
+        ),
+        3: $spacer,
+        4: (
+            $spacer * 1.5,
+        ),
+        5: (
+            $spacer * 3,
+        ),
+        6: (
+            $spacer * 6,
+        ),
+        7: (
+            $spacer * 10,
+        ),
+    ),
+    $spacers
+);
+
 // .mt {
 //     &-6 {
 //         margin-top: 6rem;
@@ -61,7 +87,7 @@ $display-line-height: 1.15;
 //         }
 //     }
 // }
-@import './margins-and-padding.scss';
+// @import './margins-and-padding.scss';
 
 p.para,
 ul.para {
@@ -91,7 +117,7 @@ ul.para {
     }
 }
 
-.navbar-custom-brand-image>img {
+.navbar-custom-brand-image > img {
     max-height: 50px;
 }
 
