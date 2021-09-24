@@ -1,5 +1,7 @@
-.m {
-    &t {
+
+// sm
+@media (min-width: 576px) {
+    .mt-sm {
         &-6 {
             margin-top: 6rem !important;
         }
@@ -10,9 +12,8 @@
     }
 }
 
-// sm
-@media (min-width: 576px) {
-    .mt-sm {
+.m {
+    &t {
         &-6 {
             margin-top: 6rem !important;
         }
