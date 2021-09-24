@@ -230,7 +230,7 @@ hr {
 // // Extra large devices (large desktops, 1200px and up)
 // @media (min-width: 1200px) { ... }
 
-$spacers: map-merge(
+$spacers: (
     (
         0: 0,
         1: (
