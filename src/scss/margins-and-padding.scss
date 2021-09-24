@@ -19,7 +19,29 @@
         }
     }
 
-    @media (min-width: 768px) {
+    &-6 {
+        margin-top: 6rem;
+    }
+
+    &-7 {
+        margin-top: 10rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .mt-sm {
+        &-6 {
+            margin-top: 6rem;
+        }
+
+        &-7 {
+            margin-top: 10rem;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .mt-md {
         &-md-6 {
             margin-top: 6rem;
         }
@@ -27,24 +49,6 @@
         &-md-7 {
             margin-top: 10rem;
         }
-    }
-
-    @media (min-width: 576px) {
-        &-sm-6 {
-            margin-top: 6rem;
-        }
-
-        &-sm-7 {
-            margin-top: 10rem;
-        }
-    }
-    
-    &-6 {
-        margin-top: 6rem;
-    }
-
-    &-7 {
-        margin-top: 10rem;
     }
 }
 
